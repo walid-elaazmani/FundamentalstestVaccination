@@ -9,10 +9,6 @@ public class Dog extends Animal {
     public Dog(boolean isClean, int age, String name, int animalNumber, boolean hasFoulBreath) {
         super(isClean, age, name, animalNumber);
         this.hasFoulBreath = hasFoulBreath;
-
-        for (Disease disease : Disease.values()) {
-            getIsVaccinated().putIfAbsent(disease, false);
-        }
     }
 
     @Override

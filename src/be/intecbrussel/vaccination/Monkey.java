@@ -11,9 +11,6 @@ public class Monkey extends Animal {
         super(isClean, age, name, animalNumber);
         this.isHyperActive = isHyperActive;
 
-        for (Disease disease : Disease.values()) {
-            getIsVaccinated().putIfAbsent(disease, false);
-        }
     }
 
     @Override

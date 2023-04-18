@@ -12,6 +12,9 @@ public abstract class Animal implements Vaccinateable, Treatable {
     private int animalNumber;
 
     public Animal() {
+        for (Disease disease : Disease.values()) {
+            getIsVaccinated().putIfAbsent(disease, false);
+        }
     }
 
     public Animal(boolean isClean, int age, String name, int animalNumber) {
@@ -19,15 +22,16 @@ public abstract class Animal implements Vaccinateable, Treatable {
         this.age = age;
         this.name = name;
         this.animalNumber = animalNumber;
+
+        for (Disease disease : Disease.values()) {
+            getIsVaccinated().putIfAbsent(disease, false);
+        }
     }
 
     public Map<Disease, Boolean> getIsVaccinated() {
         return isVaccinated;
     }
 
-    public void setIsVaccinated(Map<Disease, Boolean> isVaccinated) {
-        this.isVaccinated = isVaccinated;
-    }
 
     public String getName() {
         return name;
