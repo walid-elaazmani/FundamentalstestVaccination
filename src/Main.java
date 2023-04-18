@@ -1,3 +1,4 @@
+import be.intecbrussel.robot.CrazyRobot;
 import be.intecbrussel.vaccination.*;
 
 public class Main {
@@ -41,6 +42,11 @@ public class Main {
 
         System.out.println("FIND BY NAME");
         shelterino.findAnimal("koko").ifPresent(System.out::println);
+
+
+        CrazyRobot jbabo = new CrazyRobot("jbabo");
+
+        System.out.println(jbabo.getUnitName());
 
 
 

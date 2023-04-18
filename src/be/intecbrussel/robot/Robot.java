@@ -18,6 +18,17 @@ public abstract class Robot {
     }
 
     public String getUnitName() {
-        return null;
+        return this.unitName;
+    }
+
+    public void setUnitName(String unitName) {
+        this.unitName = unitName;
+    }
+
+    @Override
+    public String toString() {
+        return "Robot{" +
+                "unitName='" + unitName + '\'' +
+                '}';
     }
 }

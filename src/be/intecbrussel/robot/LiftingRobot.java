@@ -13,7 +13,12 @@ public class LiftingRobot extends Robot {
         if(heigth > maxLifeHeight){
             System.out.println("no can do");
         } else System.out.println("ok can do");
+    }
 
-
+    @Override
+    public String toString() {
+        return "LiftingRobot{" +
+                "maxLifeHeight=" + maxLifeHeight +
+                '}';
     }
 }

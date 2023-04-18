@@ -13,6 +13,12 @@ public class BendingRobot extends Robot {
         if (bendAngle > maxBendAngle){
             System.out.println("no can do");
         } else System.out.println("gelukt");
+    }
 
+    @Override
+    public String toString() {
+        return "BendingRobot{" +
+                "maxBendAngle=" + maxBendAngle +
+                '}';
     }
 }
