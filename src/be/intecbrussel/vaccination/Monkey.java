@@ -25,6 +25,6 @@ public class Monkey extends Animal {
     @Override
     public String toString() {
         return "Monkey |" + " Name: " + getName() + " | Age : " + getAge() + " | Animal Nr. : " + getAnimalNumber() + " | Clean : " + isClean() +
-                " | is HyperActive: " + isHyperActive;
+                " | is HyperActive: " + isHyperActive + " | vaccination card : " + getIsVaccinated();
     }
 }

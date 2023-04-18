@@ -4,7 +4,9 @@ public class Cat extends Animal {
     private boolean hasLongNails;
 
     public Cat(){
-
+        for (Disease disease : Disease.values()) {
+            getIsVaccinated().putIfAbsent(disease, false);
+        }
     }
 
     public Cat(boolean isClean, int age, String name, int animalNumber, boolean hasLongNails) {
@@ -25,6 +27,6 @@ public class Cat extends Animal {
     @Override
     public String toString() {
         return "Cat |" + " Name: " + getName() + " | Age : " + getAge() + " | Animal Nr. : " + getAnimalNumber() + " | Clean : " + isClean() +
-                 " | has Long Nails: " + hasLongNails;
+                 " | has Long Nails: " + hasLongNails + " | vaccination card : " + getIsVaccinated();
     }
 }

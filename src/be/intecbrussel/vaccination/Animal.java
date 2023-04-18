@@ -25,8 +25,16 @@ public abstract class Animal implements Vaccinateable, Treatable {
         return isVaccinated;
     }
 
+    public void setIsVaccinated(Map<Disease, Boolean> isVaccinated) {
+        this.isVaccinated = isVaccinated;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {

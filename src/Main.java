@@ -7,6 +7,10 @@ public class Main {
         Monkey aap = new Monkey(false, 3, "koko", 569874, true);
         Cat categorique = new Cat(false, 1, "kra", 4658, true);
         Dog dodgy = new Dog(false, 9, "drogo", 45656, true);
+        Cat cc = new Cat();
+        cc.setName("bobo");
+
+        System.out.println(cc);
 
         aap.vaccinateAnimal(Disease.CHICKENPOCKS);
         aap.vaccinateAnimal(Disease.POLIO);
@@ -21,6 +25,7 @@ public class Main {
         shelterino.addAnimal(aap);
         shelterino.addAnimal(categorique);
         shelterino.addAnimal(dodgy);
+        shelterino.addAnimal(cc);
 
         System.out.println(shelterino.countAnimals());
         System.out.println(aap);

@@ -24,6 +24,6 @@ public class Dog extends Animal {
     @Override
     public String toString() {
         return "Dog |" + " Name: " + getName() + " | Age : " + getAge() + " | Animal Nr. : " + getAnimalNumber() + " | Clean : " + isClean() +
-                " | Has Foul Breath : " + hasFoulBreath;
+                " | Has Foul Breath : " + hasFoulBreath + " | vaccination card : " + getIsVaccinated();
     }
 }
