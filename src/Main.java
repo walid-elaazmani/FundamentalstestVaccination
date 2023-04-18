@@ -42,11 +42,14 @@ public class Main {
 
         System.out.println("FIND BY NAME");
         shelterino.findAnimal("koko").ifPresent(System.out::println);
+        shelterino.findAnimal(2).ifPresent(System.out::println);
+
+        System.out.println("SORT BY NAME");
+        shelterino.sortAnimalsByName();
+        System.out.println(shelterino);
 
 
-        CrazyRobot jbabo = new CrazyRobot("jbabo");
 
-        System.out.println(jbabo.getUnitName());
 
 
 

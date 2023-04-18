@@ -82,8 +82,11 @@ public class AnimalShelter {
 
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "AnimalShelter{" +
+                "animals=" + animals +
+                ", animalId=" + animalId +
+                '}';
+    }
 }
