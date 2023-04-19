@@ -42,11 +42,22 @@ public class AnimalShelter {
     public Optional<Animal> findAnimal(int animalNumber){
         return animals.stream()
                 .filter(animal -> animal.getAnimalNumber() == animalNumber).findFirst();
+
     }
 
-    public Optional<Animal> findAnimal(String name){
-        return animals.stream()
-                .filter(animal -> animal.getName().equals(name)).findFirst();
+    public List<Animal> findAnimal(String name){
+        // Optional
+//        return animals.stream()
+//                .filter(animal -> animal.getName().equals(name)).findFirst();
+
+        // LIST (if 2 of more animals with same name)
+        List<Animal> animalsFound = animals.stream()
+                .filter(animal -> animal.getName().equals(name))
+                .toList();
+
+        System.out.println("Matches found with name '" + name + "': " + animalsFound.size());
+
+        return animalsFound;
     }
 
     public void treatAnimal(int animalNumber){
@@ -66,8 +77,12 @@ public class AnimalShelter {
     }
 
     public Animal findOldestAnimal(){
-        animals.sort(Comparator.comparing(Animal::getAge).reversed());
-        return animals.get(0);
+
+        List<Animal> oldestAnimal = new ArrayList<>(animals);
+
+        oldestAnimal.sort(Comparator.comparing(Animal::getAge).reversed());
+
+        return oldestAnimal.get(0);
     }
 
     public int countAnimals(){
@@ -84,9 +99,14 @@ public class AnimalShelter {
 
     @Override
     public String toString() {
-        return "AnimalShelter{" +
-                "animals=" + animals +
-                ", animalId=" + animalId +
-                '}';
+
+        String a = "";
+
+        for (Animal animal : animals) {
+            a += (animal.toString() + "\n");
+        }
+
+
+        return a;
     }
 }

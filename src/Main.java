@@ -7,8 +7,8 @@ public class Main {
         Monkey aap = new Monkey(false, 3, "koko", 569874, true);
         Cat categorique = new Cat(false, 1, "kra", 4658, true);
         Dog dodgy = new Dog(false, 9, "drogo", 45656, true);
-        Cat cc = new Cat();
-        cc.setName("bobo");
+        Cat cc = new Cat(); cc.setName("bobo");
+
 
         System.out.println(cc);
 
@@ -27,31 +27,36 @@ public class Main {
         shelterino.addAnimal(dodgy);
         shelterino.addAnimal(cc);
 
+        System.out.println("\nANIMAL COUNT");
         System.out.println(shelterino.countAnimals());
-        System.out.println(aap);
-        System.out.println(categorique);
 
-        shelterino.findOldestAnimal();
+        System.out.println("\nFIND OLDEST ANIMAL");
+        System.out.println(shelterino.findOldestAnimal());
         shelterino.printAnimals();
 
-        System.out.println("CLEAN ALL");
+        System.out.println("\nCLEAN ALL ANIMALS");
         shelterino.treatAnimal("koko");
         shelterino.treatAnimal(1);
         shelterino.printAnimals();
 
-        System.out.println("VACCINATED FOR POLIO");
+        System.out.println("\nNOT VACCINATED FOR A CERTAIN DISEASE");
         shelterino.printaAnimalIsNotVaccinated(Disease.POLIO);
 
-        System.out.println("FIND 1");
-        System.out.println(shelterino.findAnimal(1));
-
-        System.out.println("FIND BY NAME");
-        shelterino.findAnimal("koko").ifPresent(System.out::println);
+        System.out.println("\nFIND BY NAME");
+        System.out.println(shelterino.findAnimal("koko"));
         shelterino.findAnimal(2).ifPresent(System.out::println);
 
-        System.out.println("SORT BY NAME");
+        System.out.println("\nSORT BY NAME");
         shelterino.sortAnimalsByName();
-        System.out.println(shelterino);
+        shelterino.printAnimals();
+
+        System.out.println("\nSORT BY AGE");
+        shelterino.sortAnimalsByAge();
+        shelterino.printAnimals();
+
+        System.out.println("\nSORT BY NATURAL ORDER (ID)");
+        shelterino.sortAnimals();
+        shelterino.printAnimals();
 
 
 

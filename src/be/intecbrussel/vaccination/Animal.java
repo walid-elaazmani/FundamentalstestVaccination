@@ -5,7 +5,7 @@ import java.util.Map;
 
 public abstract class Animal implements Vaccinateable, Treatable {
 
-    private Map<Disease, Boolean> isVaccinated = new HashMap<>();
+    private final Map<Disease, Boolean> isVaccinated = new HashMap<>();
     private boolean isClean;
     private int age;
     private String name;
@@ -31,7 +31,6 @@ public abstract class Animal implements Vaccinateable, Treatable {
     public Map<Disease, Boolean> getIsVaccinated() {
         return isVaccinated;
     }
-
 
     public String getName() {
         return name;
