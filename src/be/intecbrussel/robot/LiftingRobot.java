@@ -10,7 +10,7 @@ public class LiftingRobot extends Robot {
 
     public void life (double heigth){
 
-        if(heigth > maxLifeHeight){
+        if(heigth > maxLifeHeight && heigth >= 0){
             System.out.println("no can do");
         } else System.out.println("ok can do");
     }

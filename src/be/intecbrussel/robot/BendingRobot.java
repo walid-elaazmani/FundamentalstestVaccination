@@ -10,9 +10,9 @@ public class BendingRobot extends Robot {
 
     public void bend (double bendAngle){
 
-        if (bendAngle > maxBendAngle || bendAngle > 360){
-            System.out.println("no can do");
-        } else System.out.println("gelukt");
+        if (bendAngle < maxBendAngle && bendAngle <= 360.0 && bendAngle >= 0.0){
+            System.out.println("bended at " + bendAngle + " degrees");
+        } else System.out.println("Can not do");
     }
 
     @Override

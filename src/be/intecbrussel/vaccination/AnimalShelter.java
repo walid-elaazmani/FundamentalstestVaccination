@@ -90,11 +90,9 @@ public class AnimalShelter {
     }
 
     public void addAnimal(Animal animal){
-
         animals.add(animal);
         animal.setAnimalNumber(animalId);
         animalId += 1;
-
     }
 
     @Override

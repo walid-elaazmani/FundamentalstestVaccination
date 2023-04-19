@@ -6,15 +6,12 @@ public class Main {
 
         Monkey aap = new Monkey(false, 3, "koko", 569874, true);
         Cat categorique = new Cat(false, 1, "kra", 4658, true);
-        Dog dodgy = new Dog(false, 9, "drogo", 45656, true);
-        Cat cc = new Cat(); cc.setName("bobo");
+        Dog dodgy = new Dog(false, 9, "dodgy", 45656, true);
+        Cat catapulte = new Cat(); catapulte.setName("zylo");
 
         aap.vaccinateAnimal(Disease.CHICKENPOCKS);
         aap.vaccinateAnimal(Disease.POLIO);
         categorique.vaccinateAnimal(Disease.POLIO);
-
-        System.out.println(aap);
-        System.out.println(categorique);
 
 
         AnimalShelter shelterino = new AnimalShelter(0);
@@ -22,7 +19,7 @@ public class Main {
         shelterino.addAnimal(aap);
         shelterino.addAnimal(categorique);
         shelterino.addAnimal(dodgy);
-        shelterino.addAnimal(cc);
+        shelterino.addAnimal(catapulte);
 
         System.out.println("\nANIMAL COUNT");
         System.out.println(shelterino.countAnimals());
@@ -54,6 +51,9 @@ public class Main {
         System.out.println("\nSORT BY NATURAL ORDER (ID)");
         shelterino.sortAnimals();
         shelterino.printAnimals();
+
+
+
 
 
 
