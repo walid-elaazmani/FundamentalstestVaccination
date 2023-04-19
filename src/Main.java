@@ -9,9 +9,6 @@ public class Main {
         Dog dodgy = new Dog(false, 9, "drogo", 45656, true);
         Cat cc = new Cat(); cc.setName("bobo");
 
-
-        System.out.println(cc);
-
         aap.vaccinateAnimal(Disease.CHICKENPOCKS);
         aap.vaccinateAnimal(Disease.POLIO);
         categorique.vaccinateAnimal(Disease.POLIO);

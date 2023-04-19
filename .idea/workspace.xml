@@ -7,10 +7,7 @@
     <list default="true" id="df9155a7-8b61-49a3-8292-5b6b0ad97146" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/AnimalShelter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/vaccination/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/robot/BendingRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/robot/BendingRobot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
