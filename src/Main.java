@@ -1,4 +1,6 @@
+import be.intecbrussel.robot.BendingRobot;
 import be.intecbrussel.robot.CrazyRobot;
+import be.intecbrussel.robot.LiftingRobot;
 import be.intecbrussel.vaccination.*;
 
 public class Main {
@@ -51,6 +53,27 @@ public class Main {
         System.out.println("\nSORT BY NATURAL ORDER (ID)");
         shelterino.sortAnimals();
         shelterino.printAnimals();
+
+
+
+        // ROBOT
+
+        CrazyRobot barjo = new CrazyRobot("barjo");
+        System.out.println(barjo);
+
+        BendingRobot bendo = new BendingRobot("Bendo", 270);
+        bendo.bend(290);
+        bendo.bend(200);
+        bendo.bend(-6);
+
+        LiftingRobot lifto = new LiftingRobot("lifto", -5);
+        System.out.println(lifto);
+        lifto.lift(0);
+        lifto.lift(-9);
+        lifto.lift(9);
+
+
+
 
 
 
