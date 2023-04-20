@@ -5,6 +5,13 @@ public class BendingRobot extends Robot {
 
     public BendingRobot(String unitName, double maxBendAngle) {
         super(unitName);
+
+        maxBendAngle = Math.abs(maxBendAngle);
+
+        if (maxBendAngle > 360) {
+            maxBendAngle = 360;
+        }
+
         this.maxBendAngle = maxBendAngle;
     }
 

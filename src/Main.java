@@ -61,7 +61,8 @@ public class Main {
         CrazyRobot barjo = new CrazyRobot("barjo");
         System.out.println(barjo);
 
-        BendingRobot bendo = new BendingRobot("Bendo", 270);
+        BendingRobot bendo = new BendingRobot("Bendo", -10);
+        System.out.println(bendo);
         bendo.bend(290);
         bendo.bend(200);
         bendo.bend(-6);
