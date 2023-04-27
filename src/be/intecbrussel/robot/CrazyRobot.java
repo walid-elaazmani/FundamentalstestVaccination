@@ -8,7 +8,8 @@ public class CrazyRobot extends Robot {
     }
 
     public void boot(){
-        setUnitName(new StringBuilder(super.getUnitName()).reverse().toString());
+        System.out.println("Booting up")
+        System.out.println("my name is " + new StringBuilder(super.getUnitName()).reverse().toString());
     }
 
 }
