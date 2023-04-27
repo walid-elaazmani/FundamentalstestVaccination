@@ -12,6 +12,9 @@ public abstract class Animal implements Vaccinateable, Treatable {
     private int animalNumber;
 
     public Animal() {
+        
+        name = "Error404";
+        
         for (Disease disease : Disease.values()) {
             getIsVaccinated().putIfAbsent(disease, false);
         }
